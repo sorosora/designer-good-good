@@ -14,6 +14,7 @@ const Title = styled.div`
   -webkit-line-clamp: 2;
   font-family: ${({ theme }) => theme.font.family.pingFang};
   font-size: 22px;
+  line-height: 1.39;
   font-weight: 600;
   color: hsl(220, 3%, 21%);
 `;
@@ -32,6 +33,7 @@ const Content = styled.div`
 const ReadMore = styled.div`
   font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
+  line-height: 1.375;
   font-weight: 600;
   text-align: right;
   color: hsl(0, 0%, 71%);

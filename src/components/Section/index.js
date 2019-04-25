@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Title = styled.div`
   font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 36px;
+  line-height: 1.39;
   font-weight: 600;
   text-align: center;
   color: hsl(220, 3%, 21%);
@@ -11,6 +12,7 @@ const Title = styled.div`
 const Subtitle = styled.div`
   font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
+  line-height: 1.375;
   font-weight: 600;
   text-align: center;
   color: hsl(220, 3%, 34%);

@@ -39,6 +39,7 @@ const Button = styled.button`
   border: solid 1px;
   font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
+  line-height: 1.375;
   font-weight: bold;
   letter-spacing: 3px;
   text-align: center;
