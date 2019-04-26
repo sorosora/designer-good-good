@@ -19,8 +19,8 @@ const sizes = {
 };
 
 const grid = {
-  padding: ['15px', '32px', '16px'],
-  gutter: ['30px', '16px', '16px'],
+  padding: ['15px', '30px', '16px'],
+  gutter: ['30px', '30px', '16px'],
   gridWidth: ['1200px'],
 };
 
