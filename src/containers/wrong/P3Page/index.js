@@ -1,7 +1,33 @@
 import styled from 'styled-components';
 import { GridWrapper, Grid, Col } from '@sorosora/grid';
-import Section from 'components/Section';
-import { ArticleCard, AlbumCard } from 'components/Card';
+import Section from 'components/wrong/Section';
+import { ArticleCard, AlbumCard } from 'components/wrong/Card';
+
+const FirstArticleSection = styled(Section)`
+  padding: 40px 0;
+  margin-bottom: 18px;
+  
+  ${Section.Title} {
+    margin-bottom: 6px;
+  }
+  
+  ${Section.Subtitle} {
+    margin-bottom: 40px;
+  }
+`;
+
+const SecondArticleSection = styled(Section)`
+  padding: 42px 0;
+  margin-bottom: 35px;
+  
+  ${Section.Title} {
+    margin-bottom: 12px;
+  }
+  
+  ${Section.Subtitle} {
+    margin-bottom: 42px;
+  }
+`;
 
 const Wrapper = styled.div``;
 
@@ -122,7 +148,7 @@ const IndexPage = () => (
           }
         </Grid>
       </Section>
-      <Section>
+      <FirstArticleSection>
         <Section.Title>All activity from creatives you follow</Section.Title>
         <Section.Subtitle>How we do it</Section.Subtitle>
         <Grid>
@@ -147,8 +173,8 @@ const IndexPage = () => (
             ))
           }
         </Grid>
-      </Section>
-      <Section>
+      </FirstArticleSection>
+      <SecondArticleSection>
         <Section.Title>Similar to projects you{'\''}ve viewed</Section.Title>
         <Section.Subtitle>Explore more creative fields & tools to adjust what you follow.</Section.Subtitle>
         <Grid>
@@ -173,7 +199,7 @@ const IndexPage = () => (
             ))
           }
         </Grid>
-      </Section>
+      </SecondArticleSection>
     </GridWrapper>
   </Wrapper>
 );

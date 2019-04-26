@@ -9,24 +9,12 @@ const colorStyle = (props) => {
         border-color: hsl(184, 80%, 43%);
         background-color: hsl(184, 80%, 43%);
         color: hsl(0, 0%, 100%);
-        
-        :hover {
-          border-color: hsl(0, 0%, 100%);
-          background-color: hsl(0, 0%, 100%);
-          color: hsl(184, 80%, 43%);
-        }
       `;
     default:
       return css`
         border-color: hsl(0, 0%, 71%);
         background-color: transparent;
         color: hsl(0, 0%, 71%);
-        
-        :hover {
-          border-color: hsl(184, 80%, 43%);
-          background-color: hsl(184, 80%, 43%);
-          color: hsl(0, 0%, 100%);
-        }
       `;
   }
 };
@@ -37,6 +25,7 @@ const Button = styled.button`
   box-sizing: border-box;
   border-radius: 28px;
   border: solid 1px;
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.375;
   font-weight: bold;

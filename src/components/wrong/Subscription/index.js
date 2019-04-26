@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import Button from 'components/Button';
+import Button from 'components/wrong/Button';
 
 const Title = styled.div`
+  font-family: ${({ theme }) => theme.font.family.pingFang};
   font-size: 34px;
   font-weight: 600;
   line-height: 1.38;
@@ -17,6 +18,7 @@ const Input = styled.input`
   border: none;
   border-radius: 4px;
   background-color: hsla(0, 0%, 100%, 0.1);
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.2px;
@@ -39,7 +41,8 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 32px;
   height: 256px;
-  background-color: hsla(220, 3%, 21%, 0.9);
+  background-color: hsla(220, 3%, 21%);
+  opacity: 0.9;
   
   ${Title} {
     margin-bottom: 24px;

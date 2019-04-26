@@ -32,6 +32,7 @@ const Tag = styled.div`
 `;
 
 const Title = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.375;
   font-weight: bold;
@@ -39,6 +40,7 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 12px;
   line-height: 1.375;
   color: hsl(0, 0%, 100%);
@@ -54,6 +56,7 @@ const Icon = styled.div`
 `;
 
 const Count = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 12px;
   line-height: 1.375;
   font-style: italic;

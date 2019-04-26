@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { GridWrapper, Grid, Col } from '@sorosora/grid';
 import { Img } from 'shared-components';
-import Horoscope from 'components/Horoscope';
+import Horoscope from 'components/wrong/Horoscope';
 import LearningSchedule from './LearningSchedule';
 
 const SC = {};
@@ -9,6 +9,7 @@ const SC = {};
 SC.LearningSchedule = styled(LearningSchedule)``;
 
 const Title = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 36px;
   line-height: 1.375;
   font-weight: 600;
@@ -17,7 +18,8 @@ const Title = styled.div`
 `;
 
 const Block = styled.div`
-  background-color: hsla(0, 0%, 71%, 0.18);
+  background-color: hsl(0, 0%, 71%);
+  opacity: 0.18;
 `;
 
 const HoroscopeBlock = styled(Block)`

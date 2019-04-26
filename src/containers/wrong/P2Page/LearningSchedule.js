@@ -16,6 +16,7 @@ const colorStyle = (props) => {
 };
 
 const Title = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -23,6 +24,7 @@ const Title = styled.div`
 `;
 
 const Time = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 14px;
   line-height: 1.375;
   font-weight: bold;
@@ -31,6 +33,7 @@ const Time = styled.div`
 `;
 
 const Content = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.2px;
@@ -38,6 +41,7 @@ const Content = styled.div`
 `;
 
 const Subject = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 12px;
   line-height: 1.375;
   font-weight: 600;

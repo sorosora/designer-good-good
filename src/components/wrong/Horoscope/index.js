@@ -33,6 +33,7 @@ const Icon = styled.div`
 
 const Title = styled.div`
   padding: 8px 0;
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 24px;
   line-height: 1.375;
   font-weight: bold;
@@ -44,6 +45,7 @@ const Title = styled.div`
 `;
 
 const Content = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.75;
   color: hsl(220, 3%, 34%);

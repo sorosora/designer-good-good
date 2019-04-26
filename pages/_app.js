@@ -1,5 +1,8 @@
+import { withRouter } from 'next/router';
 import App, { Container } from 'next/app';
+import { ConditionalWrap } from 'shared-components';
 import Layout from 'components/Layout';
+import WrongLayout from 'components/wrong/Layout';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -14,16 +17,26 @@ class MyApp extends App {
 
   render() {
     const {
-      Component, pageProps,
+      Component, pageProps, router: { pathname },
     } = this.props;
     return (
       <Container>
-        <Layout>
+        <ConditionalWrap
+          condition={pathname.indexOf('/wrong') === 0}
+          wrap={{
+            wrapForTrue: children => (
+              <WrongLayout>{children}</WrongLayout>
+            ),
+            wrapForFalse: children => (
+              <Layout>{children}</Layout>
+            ),
+          }}
+        >
           <Component {...pageProps} />
-        </Layout>
+        </ConditionalWrap>
       </Container>
     );
   }
 }
 
-export default MyApp;
+export default withRouter(MyApp);

@@ -12,6 +12,7 @@ const Title = styled.div`
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  font-family: ${({ theme }) => theme.font.family.pingFang};
   font-size: 22px;
   line-height: 1.39;
   font-weight: 600;
@@ -23,22 +24,20 @@ const Content = styled.div`
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  font-family: ${({ theme }) => theme.font.family.pingFang};
   font-size: 18px;
   line-height: 1.72;
   color: hsl(220, 3%, 34%);
 `;
 
 const ReadMore = styled.div`
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 16px;
   line-height: 1.375;
   font-weight: 600;
   text-align: right;
   color: hsl(0, 0%, 71%);
   transition: .3s;
-  
-  a:hover & {
-    color: hsl(184, 80%, 43%);
-  }
 `;
 
 SC.Content = styled(Card.Content)`

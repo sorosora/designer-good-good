@@ -1,8 +1,21 @@
 import styled from 'styled-components';
 import { GridWrapper, Grid, Col } from '@sorosora/grid';
-import Section from 'components/Section';
-import { ArticleCard } from 'components/Card';
-import Button from 'components/Button';
+import Section from 'components/wrong/Section';
+import { ArticleCard } from 'components/wrong/Card';
+import Button from 'components/wrong/Button';
+
+const ArticleSection = styled(Section)`
+  padding: 43px;
+  margin-bottom: 27px;
+    
+  ${Section.Title} {
+    margin-bottom: 5px;
+  }
+  
+  ${Section.Subtitle} {
+    margin-bottom: 40px;
+  }
+`;
 
 const Wrapper = styled.div``;
 
@@ -43,7 +56,7 @@ const IndexPage = () => (
           </Col>
         </Grid>
       </Section>
-      <Section>
+      <ArticleSection>
         <Section.Title>卡片設計和配圖的重要性</Section.Title>
         <Section.Subtitle>How we do it</Section.Subtitle>
         <Grid>
@@ -68,7 +81,7 @@ const IndexPage = () => (
             ))
           }
         </Grid>
-      </Section>
+      </ArticleSection>
     </GridWrapper>
   </Wrapper>
 );
