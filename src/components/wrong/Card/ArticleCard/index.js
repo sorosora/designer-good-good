@@ -24,7 +24,7 @@ const Content = styled.div`
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-family: ${({ theme }) => theme.font.family.pingFang};
+  font-family: ${({ theme }) => theme.font.family.openSans};
   font-size: 18px;
   line-height: 1.72;
   color: hsl(220, 3%, 34%);

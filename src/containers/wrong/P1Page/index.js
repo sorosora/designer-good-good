@@ -5,7 +5,7 @@ import { ArticleCard } from 'components/wrong/Card';
 import Button from 'components/wrong/Button';
 
 const ArticleSection = styled(Section)`
-  padding: 43px;
+  padding: 43px 0;
   margin-bottom: 27px;
     
   ${Section.Title} {
