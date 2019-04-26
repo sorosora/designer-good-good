@@ -94,51 +94,6 @@ const albumList = [
   },
 ];
 
-const horoscopeList = [
-  {
-    id: 0,
-    sign: 'Cancer',
-    title: '巨蟹座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-  {
-    id: 1,
-    sign: 'Aries',
-    title: '牡羊座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-  {
-    id: 2,
-    sign: 'Leo',
-    title: '獅子座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-  {
-    id: 3,
-    sign: 'Virgo',
-    title: '處女座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-  {
-    id: 4,
-    sign: 'Taurus',
-    title: '金牛座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-  {
-    id: 5,
-    sign: 'Gemini',
-    title: '雙子座的愛恨糾葛',
-    content: 'No more Mulitple Platforms. Now it had seen unable uneasy.'
-      + 'Drawings can followed by improved out sociable not. Earnestly so do instantly pretended.',
-  },
-];
-
 const IndexPage = () => (
   <Wrapper>
     <GridWrapper>
@@ -194,19 +149,6 @@ const IndexPage = () => (
           }
         </Grid>
       </Section>
-      <Grid verticalGutter={['32px']}>
-        {
-          horoscopeList.map(horoscope => (
-            <Col width={[4 / 12]} key={horoscope.id}>
-              <Horoscope
-                title={horoscope.title}
-                content={horoscope.content}
-                sign={horoscope.sign}
-              />
-            </Col>
-          ))
-        }
-      </Grid>
     </GridWrapper>
   </Wrapper>
 );
