@@ -33,6 +33,21 @@ const IndexPage = () => (
             <A>p3</A>
           </Link>
         </li>
+        <li>
+          <Link href='/wrong/p1' passHref>
+            <A>wrong p1</A>
+          </Link>
+        </li>
+        <li>
+          <Link href='/wrong/p2' passHref>
+            <A>wrong p2</A>
+          </Link>
+        </li>
+        <li>
+          <Link href='/wrong/p3' passHref>
+            <A>wrong p3</A>
+          </Link>
+        </li>
       </ul>
     </GridWrapper>
   </Wrapper>
